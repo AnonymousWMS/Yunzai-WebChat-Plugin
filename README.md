@@ -2,11 +2,10 @@
 
 一个 Yunzai-Bot 插件，它启动一个 WebSocket 服务器，允许非 QQ/微信 的自定义 WebSocket 前端连接，并将消息模拟成 Yunzai 的事件进行处理。
 
-## 客户端[Client](https://github.com/AnonymousWMS/Yunzai-WebChat-Plugin-Client)
+## 客户端
 
 *   使用作者制作的客户端
-*   客户端地址：https://github.com/AnonymousWMS/Yunzai-WebChat-Plugin-Client
-*   [Yunzai-WebChat-Plugin-Client](https://github.com/AnonymousWMS/Yunzai-WebChat-Plugin-Client)
+*   客户端地址：[Yunzai-WebChat-Plugin-Client](https://github.com/AnonymousWMS/Yunzai-WebChat-Plugin-Client)
 
 ## 下载插件
 * 使用 Github

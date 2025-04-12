@@ -2,6 +2,18 @@
 
 一个 Yunzai-Bot 插件，它启动一个 WebSocket 服务器，允许非 QQ/微信 的自定义 WebSocket 前端连接，并将消息模拟成 Yunzai 的事件进行处理。
 
+## 客户端[Client](https://github.com/AnonymousWMS/Yunzai-WebChat-Plugin-Client)
+
+*   使用作者制作的客户端
+*   客户端地址：https://github.com/AnonymousWMS/Yunzai-WebChat-Plugin-Client
+*   [Yunzai-WebChat-Plugin-Client](https://github.com/AnonymousWMS/Yunzai-WebChat-Plugin-Client)
+
+## 下载插件
+* 使用 Github
+``` bash
+git clone --depth=1 https://github.com/AnonymousWMS/Yunzai-WebChat-Plugin.git ./plugins/Yunzai-WebChat-Plugin/
+```
+
 ## 功能
 
 *   启动一个可配置的 WebSocket 服务器。
@@ -12,7 +24,23 @@
 
 ## 配置
 
-插件配置文件位于 `Yunzai-Bot/config/config/WebChatPlugin.yaml`。
+插件配置文件需要放置在 `Yunzai/config/WebChatPlugin.yaml`。
+
+WebChatPlugin.yaml
+``` bash
+server:
+  host: localhost
+  port: 2537
+  path: /WebChatPlugin
+shared_token: PleaseChangeThisSecretToken_WebChatPlugin
+log_messages: false
+tips:
+  - 欢迎使用 WebChatPlugin !
+  - 这是一个将 WebSocket 连接模拟成 Yunzai 消息的插件。
+  - 请确保客户端连接到 ws://localhost:2538/WebChatPlugin
+  - 并在连接后发送 auth 消息进行身份验证。
+  - "配置文件路径: config/WebChatPlugin.yaml"
+```
 
 *   `server`:
     *   `host`: WebSocket 服务器监听的主机 (默认: `localhost`)

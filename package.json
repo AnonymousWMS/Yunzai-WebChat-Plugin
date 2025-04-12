@@ -1,0 +1,19 @@
+{
+  "name": "yunzai-webchat-plugin",
+  "version": "1.0.0",
+  "description": "A Yunzai plugin acting as a WebSocket adapter for custom frontends.",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "ulid": "^2.3.0",
+    "ws": "^8.17.0"
+  },
+  "keywords": [
+    "Yunzai-Bot",
+    "plugin",
+    "websocket",
+    "adapter"
+  ],
+  "author": "",
+  "license": "MIT"
+}
